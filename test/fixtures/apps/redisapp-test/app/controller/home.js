@@ -4,8 +4,8 @@ const Controller = require('egg').Controller;
 
 class HomeController extends Controller {
   async index() {
-    console.log(this.app.cache);
-    this.ctx.body = 'hi, ' + this.app.cache.default.get();
+    this.app.cache.set('name', 'redis');
+    this.ctx.body = 'hi, ' + await this.app.cache.get('name');
   }
 }
 

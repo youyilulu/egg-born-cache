@@ -4,7 +4,9 @@
     "name": "born-cache",
     "dependencies": "born-core"
   },
-  "dependencies": {},
+  "dependencies": {
+    "redis": "~2.8.0"
+  },
   "devDependencies": {
     "autod": "^3.0.0",
     "autod-egg": "^1.0.0",

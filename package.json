@@ -6,10 +6,10 @@
     "node": ">=8.0.0"
   },
   "eggPlugin": {
-    "name": "egg-born-cache"
+    "name": "cache"
   },
   "dependencies": {
-    "redis": "~2.8.0"
+    "egg-born-core": "../egg-born-core"
   },
   "devDependencies": {
     "autod": "^3.0.0",

@@ -69,4 +69,4 @@ app.cache.use('redis', new RedisStrategy(app.config.redis));
 - [x] 依赖egg-born-core
 
 # TODO
-- [ ] 在app中测试该插件的使用情况
+- [x] 在app中测试该插件的使用情况

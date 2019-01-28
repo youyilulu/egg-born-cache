@@ -17,7 +17,7 @@ describe('test/hello.test.js', () => {
   it('should GET /', () => {
     return app.httpRequest()
       .get('/')
-      .expect('hi, redis')
+      .expect('hi, default')
       .expect(200);
   });
 });

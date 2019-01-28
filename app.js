@@ -2,9 +2,9 @@
 
 const cache = require('./lib/cache');
 
-const RedisStrategy = require('./lib/strategy/redis');
+const DefaultStrategy = require('./lib/default_strategy');
 
 module.exports = app => {
   cache(app);
-  app.cache.use('redis', new RedisStrategy(app.config.redis));
+  app.cache.use('default', new DefaultStrategy());
 };

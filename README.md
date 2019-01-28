@@ -2,13 +2,15 @@
 
 ## Usage
 
-### 临时方案link
+### local usage - link
+clone egg-born-core[https://github.com/youyilulu/egg-born-core] first
+
 ```bash
 cd egg-born-core && npm link
 cd ../egg-born-cache && npm link egg-born-core
 ```
 
-### 实现CacheStrategy
+### implement CacheStrategy
 ```js
 // redis-strategy.js
 

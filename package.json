@@ -1,8 +1,12 @@
 {
   "name": "egg-born-cache",
+  "version": "1.0.0",
+  "description": "",
+  "engines": {
+    "node": ">=8.0.0"
+  },
   "eggPlugin": {
-    "name": "born-cache",
-    "dependencies": "born-core"
+    "name": "egg-born-cache"
   },
   "dependencies": {
     "redis": "~2.8.0"
@@ -31,5 +35,6 @@
     "config",
     "app.js",
     "lib"
-  ]
+  ],
+  "license": "MIT"
 }

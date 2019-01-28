@@ -1,6 +1,13 @@
 # egg-born-cache
 
 ## Usage
+
+### 临时方案link
+```bash
+cd egg-born-core && npm link
+cd ../egg-born-cache && npm link egg-born-core
+```
+
 ### 实现CacheStrategy
 ```js
 // redis-strategy.js
@@ -56,8 +63,8 @@ app.cache.use('redis', new RedisStrategy(app.config.redis));
 
 # Road Map
 
-- [ ] CacheStrategy封装到egg-born-core中，这样可以约定cache strategy的接口，避免混淆
-- [ ] 依赖egg-born-core
+- [x] CacheStrategy封装到egg-born-core中，这样可以约定cache strategy的接口，避免混淆
+- [x] 依赖egg-born-core
 
 # TODO
 - [ ] 在app中测试该插件的使用情况

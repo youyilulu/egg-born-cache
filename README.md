@@ -67,7 +67,7 @@ app.cache.use('redis', new RedisStrategy(app.config.redis));
 - [x] CacheStrategy封装到egg-born-core中，这样可以约定cache strategy的接口，避免混淆
 - [x] 依赖egg-born-core
 - [x] promisify改为主动方式（因为发现同步方法通过promisify后，直接pending了）
-- [ ] 可手动指定默认cacheStrategy
+- [x] 可手动指定默认cacheStrategy
 
 # TODO
 - [x] 在app中测试该插件的使用情况

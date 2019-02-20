@@ -6,5 +6,7 @@ const DefaultStrategy = require('./lib/default_strategy');
 
 module.exports = app => {
   cache(app);
-  app.cache.use('default', new DefaultStrategy());
+  if (!app.cache.clients.has('default')) {
+    app.cache.use('default', new DefaultStrategy());
+  }
 };

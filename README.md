@@ -65,6 +65,10 @@ module.exports = () => {
 app.cache.use('redis', new RedisCacheStrategy(app.config.redis));
 ```
 
+### methods
+
+cache_context 包含三个方法，get、set 以及 del，参数跟随 strategy
+
 # Road Map
 
 - [x] CacheStrategy 封装到 egg-born-core 中，这样可以约定 cache strategy 的接口，避免混淆
